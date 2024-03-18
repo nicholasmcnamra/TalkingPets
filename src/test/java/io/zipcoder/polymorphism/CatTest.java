@@ -4,16 +4,18 @@ import org.junit.Assert;
 
 public class CatTest {
 
+    @Test
     public void constructorTest() {
         String expectedName = "fifi";
 
-        Cat cat = new Cat();
+        Cat cat = new Cat(expectedName);
 
         String actualName = cat.getName();
 
         Assert.assertEquals(expectedName, actualName);
     }
 
+    @Test
     public void getCatTest() {
         Cat cat = new Cat();
 
@@ -23,6 +25,7 @@ public class CatTest {
         Assert.assertEquals(expectedCat, actualCat);
     }
 
+    @Test
     public void speakCatTest() {
         Cat cat = new Cat();
 
@@ -32,6 +35,7 @@ public class CatTest {
         Assert.assertEquals(expectedSpeak, actualSpeak);
     }
 
+    @Test
     public void catInstanceOfAnimalTest() {
         Cat cat = new Cat();
 

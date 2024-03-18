@@ -4,19 +4,21 @@ import org.junit.Assert;
 
 public class DogTest {
 
+    @Test
     public void constructorTest() {
         String expectedName = "Tito";
 
-        Dog dog = new Dog(dogName);
+        Dog dog = new Dog(expectedName);
 
         String actualName = dog.getName();
 
         Assert.assertEquals(expectedName, actualName);
     }
 
+    @Test
     public void setDogNameTest() {
         String name = "Tito";
-        Dog dog = new Dog();
+        Dog dog = new Dog(name);
 
         dog.setName(name);
 
@@ -25,6 +27,8 @@ public class DogTest {
 
         Assert.assertEquals(expectedName, actualName);
     }
+
+    @Test
     public void getDogTest() {
         Dog dog = new Dog();
 
@@ -34,6 +38,7 @@ public class DogTest {
         Assert.assertEquals(expectedDog, actualDog);
     }
 
+    @Test
     public void speakDogTest() {
         Dog dog = new Dog();
 
@@ -43,6 +48,7 @@ public class DogTest {
         Assert.assertEquals(expectedSpeak, actualSpeak);
     }
 
+    @Test
     public void dogInstanceOfPet() {
         Dog dog = new Dog();
 
