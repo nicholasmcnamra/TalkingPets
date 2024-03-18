@@ -38,7 +38,7 @@ public class MainApplication {
                 Macaw newMacaw = new Macaw(petName);
                 petMap.put(newMacaw, petName);
             }
-
+ 
         }
         return petMap;
     }
